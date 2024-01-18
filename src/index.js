@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
 const morgan = require("morgan");
-
+const PORT = process.env.PORT || 3000;
 
 // 1) settings
-app.set("port", process.env.PORT || 3000); //settings  // process.env.PORT encaso de que alla otro puerto en la nube pues q lo tome 
+app.set("port", PORT); //settings  // process.env.PORT encaso de que alla otro puerto en la nube pues q lo tome 
 
 
-// 2) middelwel
+// 2) middelwelgit status
 app.use(morgan("dev")); //middelwel morgan es una funcion  y me permite ver por con sola lo que va llegando al servidor
 // el metodo  app.use(morgan('combined')) nos da mas informacion de donde y como se esta haciendo la peticion
 app.use(express.urlencoded({ extended: false })); // entender datos que viende de Formularios
