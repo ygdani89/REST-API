@@ -1,0 +1,18 @@
+[
+    {
+        "id":"0",
+        "Tittle":"Alien",
+        "Director":"James Cameron",
+        "Year":"1945",
+        "Rate":"8.5"
+
+    },
+    {
+        "id":"1",
+        "Tittle":"Django",
+        "Director":"Quentin Tarantino",
+        "Year":"2018",
+        "Rate":"9"
+
+    }
+]
